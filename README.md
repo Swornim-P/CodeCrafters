@@ -1,1 +1,1 @@
-Aada paada kisne pada? Saru ne pada!
+Absentees will be kicked out!!!
