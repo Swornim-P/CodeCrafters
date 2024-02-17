@@ -1,1 +1,1 @@
-Absentees will be kicked out!!!
+ABSENTEES WILL BE KICKED!
