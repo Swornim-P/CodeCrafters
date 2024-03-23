@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitho Resturant</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        span h1 {
+            background-color: rgb(102, 36, 5);
+            padding: 0;
+            margin: 0;
+            color: beige;
+            text-align: center;
+            font-family: cursive;
+        }
+
+
+        ul {
+            display: flex;
+            gap: 2rem;
+            background-color: rgb(247, 7, 7);
+            color: white;
+            /* list-style-type: none; */
+            margin: 0;
+            padding: 0;
+
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 24px;
+            display: block;
+            color: white;
+
+        }
+
+        nav li {
+            padding: 14px 16px;
+        }
+
+        li a {
+            padding: 14px 16px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+
+        }
+        .items>li>a{
+            color: rgb(188, 5, 5);
+            font-family:'Times New Roman', Times, serif;
+            font-size: 2rem;
+        }
+
+        section ol li {
+            list-style: lower-roman;
+        }
+
+
+        nav li:hover {
+            background-color: rgb(129, 27, 6);
+            padding: 14px 16px;
+            transition: ease;
+        }
+
+        img {
+            width: 100vw;
+            height: 100v;
+        }
+        h2{
+            font-size: 3rem;
+            color: darkred;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body bgcolor="pink">
+
+    <span class=title>
+        <h1> Mitho Resturant</h1>
+    </span>
+
+    <nav>
+        <ul>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Desserts">Desserts</a></li>
+            <li a href="#Home delivery">Home delivery</li>
+        </ul>
+    </nav>
+    <img
+        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D">
+
+    <section id="Description">
+        <h2>Description</h2>
+        <p>We are mitho resturant</p>
+
+
+    </section>
+    <br>
+    <div id="Menu">
+        <h2>Menu items</h2>
+        <p>Our menu consists of delicious combination of various foods</p>
+        <ol class="items">
+            <li><a href="momo.html">Momos</a></li>
+            <li><a href="chowmein.html">Chowmein</a></li>
+            <li><a href="pizza.html">Pizza</a></li>
+            <li><a href="rolls.html">Rolls</a></li>
+            <li><a href="burger.html">Burgers</a></li>
+
+        </ol>
+    </div>
+    <div id="Desserts">
+        <h2>Desserts</h2>
+        <p>We server delicious desserts</p>
+        <ol class="items">
+            <li><a href="lassi.html">Lassi</a></li>
+            <li><a href="jujudhau.html">Ju Ju Dhau</a></li>
+
+            <li><a href="icecream.html">Ice Cream</a></li>
+        </ol>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
